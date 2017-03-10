@@ -1,0 +1,43 @@
+{
+  "name": "uploaderjs",
+  "version": "0.0.1",
+  "description": "大文件，分片上传SDK",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.build.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeanzhi/uploader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeanzhi/uploader/issues"
+  },
+  "homepage": "https://github.com/yeanzhi/uploader#readme",
+  "dependencies": {
+    "lodash.assign": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.22.0",
+    "babel-runtime": "^6.9.2",
+    "babel-core": "^6.6.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-import": "^1.0.1",
+    "babel-plugin-syntax-async-functions": "^6.8.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-plugin-transform-regenerator": "^6.9.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.13.1",
+    "eslint-plugin-react": "^6.9.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

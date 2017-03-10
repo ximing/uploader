@@ -2,7 +2,6 @@
  * Created by yeanzhi on 15/11/3.
  */
 import assign from 'lodash.assign';
-import {eventEmitter} from './eventBus.js';
 /**
  * @fileOverview Transport
  */

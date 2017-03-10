@@ -7,7 +7,6 @@ const {
 } = require('path');
 const webpack = require('webpack');
 var node_modules = resolve(__dirname, 'node_modules');
-var pathToReact = resolve(node_modules, 'react/dist/react.min.js');
 
 module.exports = {
     entry: {
@@ -57,6 +56,15 @@ module.exports = {
     externals: [
     ],
     plugins: [
-        new webpack.NamedModulesPlugin()
+        new webpack.NamedModulesPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+                drop_console: false,
+            }
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': '"production"',
+        }),
     ]
 };
